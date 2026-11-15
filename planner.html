@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner | Ava Thompson</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand">NWAFOR ISRAEL</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html" class="active">Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1 class="section-title">Academic Planner</h1>
+      <p class="lead">
+        Organize assignments, revision sessions, and academic deadlines with a simple
+        task manager built using JavaScript.
+      </p>
+
+      <div class="planner-layout">
+        <aside class="form-panel">
+          <h2>Add a task</h2>
+          <form id="task-form">
+            <div class="form-group">
+              <label for="task-input">Task name</label>
+              <input
+                id="task-input"
+                name="task"
+                type="text"
+                placeholder="e.g. Prepare for software engineering quiz"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Add Task</button>
+          </form>
+        </aside>
+
+        <section class="tasks-panel" aria-live="polite">
+          <h2>My Tasks</h2>
+          <ul id="task-list" class="task-list"></ul>
+          <p id="empty-state" class="empty-state">No tasks yet. Add your next academic goal.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year></span> Ava Thompson</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
